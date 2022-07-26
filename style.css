@@ -1,0 +1,70 @@
+*{
+	margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+	width: 95%;
+	margin: auto;
+}
+.heading{
+	font-size:35px;
+	color:ghostwhite;
+	font-weight:bolder;
+}
+.container{
+	background: #2f5a60;
+	height: 260px;
+	margin: auto;
+	line-height: 29px;
+}
+.intro{
+	width: 350px;
+	margin:5px 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.intro img{
+	padding-left:   14px;
+	margin: auto;
+}
+.prof {
+	font-size: 20px;
+	color:ghostwhite;
+	font-weight: lighter;
+}
+.summary{
+	font-size: 17px;
+	color:ghostwhite;
+}
+.subheading{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.contactinfo{
+	font-size:18px;
+	line-height: 30px;
+	height:120px;
+}
+.icon{
+	padding-left: 15px;
+	color:#2f5a60;
+}
+.icon .fa-mobile-alt{
+	padding-left: 3px;
+}
+.rol-1 .icon{
+	display: inline-block;
+}
+.rol-1 .data{
+	display: inline-block;
+	color:black;
+}
+.skills ul li{
+	list-style-type: none;
+}
+.icon-social{
+	display: inline-block;
+	color:#2f5a60;
+}

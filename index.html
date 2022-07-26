@@ -1,44 +1,128 @@
-<!DOCETYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>MINH THUAN CV</title>
+		<meta charset="utf-8">
+		<title>My CV</title>
+		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<!---Name-->
-			<h3 align = "center" >NGUYEN MINH THUAN 's CV</h3>
-			<h2> NGUYEN MINH THUAN </h2>
-			<h3><b>Software Engineer</b></h3>
-			<img src="https://scontent.fvca1-3.fna.fbcdn.net/v/t39.30808-6/219154981_870257967232480_6698054355247473206_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=PJr_UzkWJC0AX9XdNsQ&_nc_ht=scontent.fvca1-3.fna&oh=00_AT9cj2wYBDObyXvpBLW9eOW9S5LYoGDjjwvunNxnasp5Yg&oe=62D6EE9C" height = "150px" weight = "150 px">
-			<hr/>
-		<!---More details-->
-			<!---Summary--->
-				<h2>Summary</h2>
-				<p>I am studing C++, Html.</p>
-			<!---Experiences--->
-				<h2>Experiences</h2>
-				<ul>
-					<li>
-					<b>Starting learning C++, Html,...</b> 2022-now.
-					<p>Learning C++,Html,... from <a href = "https://www.sololearn.com/home">sololearn</a>, <a href = "https://www.w3schools.com/">w3schools</a>,...</p>
-					</li>
-				</ul>
-			<!---Skills--->
-				<h2>Skills</h2>
-				<table border ="3">
-					<tr>
-						<td><b>Technologies</b></td>
-						<td>C++</td>
-						<td>Html</td>
-					</tr>
-					<tr>
-						<td><b>Soft skills</b></td>
-						<td colspan = "2">Basic, OPP, Problem Solven</td>
-					</tr>
-				</table>
-			<!---Contacts--->
-				<h2 color = "red">Contacts</h2>
-				<a href = "https://www.facebook.com/minhtinh.ng/">Facebook</a>
-				<a href = "https://github.com/ngminhthuan">GitHub</a>
-				<a href = "https://www.linkedin.com/in/nguy%E1%BB%85n-minh-tinh-613983155">LinkIn</a>
+		<!--Intro-->
+		<div class="container">
+			<div class="intro">
+				<img src="images/mypics.jpg" height="150px" width="150px" </img>
+				<div class="heading">Minh Thuan</div>
+				<div class="prof">   Beginner software engineer</div>
+				<div class="summary">I start to learn about program langue, coding...</div>
+			</div>
+		</div>
+		<!--Contact Information-->
+		<div class="contactinfo">
+			<div class="subheading">My information</div>
+			<div class="rol-1">
+				<div class="icon">
+					<div class="fas fa-map-signs"></div>
+				</div>
+				<div class="data"><strong>Current address:</strong> Viet Nam</div>
+			</div>
+			<div class="rol-1">
+				<div class="icon">
+					<div class="fas fa-mobile-alt"></div>
+				</div>
+				<div class="data">
+					 <strong>Phone:</strong> (+84) 33.650.8712
+				</div>
+			</div>
+			<div class="rol-1">
+				<div class="icon">
+					<div class="fas fa-envelope"></div>
+				</div>
+				<div class="data">
+					<strong>Email:</strong> ng.minh.thuan1710@gmail.com
+				</div>
+			</div>
+			
+		</div>
+		<!--Skills Section-->
+		<div class="subheading">Skills</div>
+		<div class="skills">
+			<ul>
+				<li>
+					<div class="skill_name">
+						C++
+					</div>
+					<div class="skill_prog">
+						<span style="width: 80%;"></span>
+					</div>
+					<div class="skill_per">80%</div>
+				</li>
+				<li>
+					<div class="skill_name">
+						HTML
+					</div>
+					<div class="skill_prog">
+						<span style="width: 70%;"></span>
+					</div>
+					<div class="skill_per">70%</div>
+				</li>
+				<li>
+					<div class="skill_name">
+						CSS
+					</div>
+					<div class="skill_prog">
+						<span style="width: 90%;"></span>
+					</div>
+					<div class="skill_per">90%</div>
+				</li>					
+			</ul>
+		</div>
+		<!--Experience/Education-->
+		<div class="subheading">Experience</div>
+		<div class="explist">
+			<ul>
+				<li>
+					<div class="date">2022-now</div> 
+					<div class="jobinfo">
+						<div class="jobtitle">Beginner Programmer</div> 
+					<div class ="jobdesc">Learn and using everything to code the program.</div>
+					</div>
+				</li>
+				<li>
+					<div class="date">04/2021-12/2021</div> 
+					<div class="jobinfo">
+						<div class="jobtitle">NDT engineer</div> 
+					<div class ="jobdesc">I am a engineer - using the non-destructive testing menthod to extermine the sample for industry, oil and gas, plane,...</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--Social-->
+		<div class="subheading">Social</div>
+		<div class="social">
+			<a href="https://www.facebook.com/minhtinh.ng/" target="_blank">
+				<div class = "icon-social">
+					<span style="padding-left:10px;">
+						<div class="fab fa-facebook-square" id="facebook"><span style="padding-left:6px;">Facebook </span></div>
+				</div>
+			</a>
+			 <a href="twitterlink" target="_blank">
+				 <div class = "icon-social">
+					 <span style="padding-left:10px;"></span>
+					 <div class="fab fa-twitter-square" id="twitter"><span style="padding-left:6px;">Twitter </span></div>
+				 </div>
+			 </a>
+			 <a href="https://www.linkedin.com/in/nguyen-minh-thuan-613983155/">
+				 <div class="icon-social">
+					 <span style="padding-left:10px;"></span>
+					 <div class="fab fa-linkedin" id="linked"><span style="padding-left:6px;">LinkedIn </span></div>
+				</div>
+			 </a>
+			<a href="https://github.com/ngminhthuan" target="_blank">
+				<div class = "icon-social">
+					<span style="padding-left:10px;"></span>
+					<div class="fab fa-github" id="github"> <span style="padding-left:0px;">Github</span></div>
+				</div>
+			 </a>
+		</div>
 	</body>
-<html>
+</html>
