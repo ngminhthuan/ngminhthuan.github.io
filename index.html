@@ -2,127 +2,201 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>My CV</title>
-		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Thuan Portfolio Wesite</title>
 		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/9cca766d48.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<!--Intro-->
-		<div class="container">
-			<div class="intro">
-				<img src="https://raw.githubusercontent.com/ngminhthuan/ngminhthuan.github.io/main/mypics.jpg" height="150px" width="175px" </img>
-				<div class="heading">Minh Thuan</div>
-				<div class="prof">   Beginner software engineer</div>
-				<div class="summary">I start to learn about program langue, coding...</div>
+		<div id="header">
+			<div class="container">
+				<nav>
+					<img src="images/logo.png" class="logo">
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+					</ul>
+					
+					<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<div class="header-text">
+					<p>UI/UX Designer</p>
+					<h1>Hi, I'm <span>Thuan</span><br>Nguyen from Viet Nam</h1>
+				</div>
 			</div>
 		</div>
-		<!--Contact Information-->
-		<div class="contactinfo">
-			<div class="subheading">My information</div>
-			<div class="rol-1">
-				<div class="icon">
-					<div class="fas fa-map-signs"></div>
+<!---------------About----->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="images/Thuan.jpg">
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<p>I am a Junior Developer in designing websites, networking. I am eager to be challenged in order to grow and further improve my IT skills. I am a hardworking and ambitious individual with a great passion for the IT. My greatest passion is in life is using my technical know-how to benefit other people and organisations.</p>
+						<div class="tab-title">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>UI/UX</span> <br>Designing Web/App interfaces</li>
+								<li><span>Web Development</span> <br>Web App Development</li>
+								<li><span>App Development</span> <br>Building Android/IOS apps</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>2022 - Current</span> <br>Designing Web in HTML CSS JS, Building AI in C++ </li>
+								<li><span>2021-2022</span> <br>Disigning Web at AITECH JSC</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li><span>2022</span> <br>C++ Certificate of SoloLearn </li>
+								<li><span>2022</span> <br>HTML Certificate of SoloLearn</li>
+								<li><span>2022</span> <br>CSS Certificate of SoloLearn</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="data"><strong>Current address:</strong> Viet Nam</div>
 			</div>
-			<div class="rol-1">
-				<div class="icon">
-					<div class="fas fa-mobile-alt"></div>
-				</div>
-				<div class="data">
-					 <strong>Phone:</strong> (+84) 33.650.8712
+		</div>
+<!------------services----------->
+		<div id="services">
+			<div class="container">
+				<h1 class="sub-title">My Services</h1>
+				<div class="services-list">
+					<div>
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Design</h2>
+						<p>I am  about making beautiful websites to help you attract and retain customers for your business. More than beautiful design, we build websites with a complete strategy designed to turn your site visitors into customers.</p>
+						<a href="#">Learn More</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-crop-simple"></i>
+						<h2>UI/UX Design</h2>
+						<p>We are passionate about making beautiful websites to help you attract and retain customers for your business. More than beautiful design, we build websites with a complete strategy designed to turn your site visitors into customers.</p>
+						<a href="#">Learn More</a>
+					</div>
+					<div>
+						<i class="fa-brands fa-app-store-ios"></i>
+						<h2>App Design</h2>
+						<p>We are passionate about making beautiful websites to help you attract and retain customers for your business. More than beautiful design, we build websites with a complete strategy designed to turn your site visitors into customers.</p>
+						<a href="#">Learn More</a>
+					</div>
 				</div>
 			</div>
-			<div class="rol-1">
-				<div class="icon">
-					<div class="fas fa-envelope"></div>
+		</div>
+<!-------------Portfolio--------->
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="sub-title">My Work</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="images/work-1.png">
+						<div class="layer">
+							<h3>Corporate Website</h3>
+							<p>The effective business website is critical to company success. I build websites with a complete strategy designed to attract more site visitors and make them into customers.</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/work-2.png">
+						<div class="layer">
+							<h3>Online Shopping Website</h3>
+							<p>The effective business website is critical to company success. I build websites with a complete strategy designed to attract more site visitors and make them into customers.</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/work-3.png">
+						<div class="layer">
+							<h3>Online Shopping Website</h3>
+							<p>The effective business website is critical to company success. I build websites with a complete strategy designed to attract more site visitors and make them into customers.</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
 				</div>
-				<div class="data">
-					<strong>Email:</strong> ng.minh.thuan1710@gmail.com
+				<a href="#" class="btn">See more</a>
+			</div>
+		</div>
+<!--------Contact---------->			 
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p><i class="fa-solid fa-envelope"></i>ng.minh.thuan1710@gmail.com</p>
+						<p><i class="fa-solid fa-phone"></i>(+84)336.508.712</p>
+						<div class="social-icons">
+							<a href="https://www.facebook.com/minhtinh.ng/"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://twitter.com/MinhThuan1710"><i class="fa-brands fa-twitter-square"></i></a>
+							<!---<a href="#"><i class="fa-brands fa-instagram"></i></a>-->
+							<a href="https://www.linkedin.com/in/nguyen-minh-thuan-613983155/"><i class="fa-brands fa-linkedin"></i></a>
+						</div>
+					</div>
+					<div class="contact-right">
+						<form name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Your Name" required>
+							<input type="email" name="Email" placeholder="Your email" required>
+							<textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+							<button type="submit" class="btn btn2">Submit</button>
+						
+						</form>
+					</div>
 				</div>
 			</div>
+			<div class ="copyright">
+				<p>Copyright <i class="fa-solid fa-copyright"></i> Thuan Nguyen</p>
+			</div>
+		</div>	 			 
+			 
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+			function opentab(tabname){
+				for(tablink of tablinks){
+					tablink.classList.remove("active-link");
+				}
+				for(tabcontent of tabcontents){
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+		</script>
+		
+		<script>
+			var sidemeu = document.getElementById("sidemenu");
 			
-		</div>
-		<!--Skills Section-->
-		<div class="subheading">Skills</div>
-		<div class="skills">
-			<ul>
-				<li>
-					<div class="skill_name">
-						C++
-					</div>
-					<div class="skill_prog">
-						<span style="width: 80%;"></span>
-					</div>
-					<div class="skill_per">80%</div>
-				</li>
-				<li>
-					<div class="skill_name">
-						HTML
-					</div>
-					<div class="skill_prog">
-						<span style="width: 70%;"></span>
-					</div>
-					<div class="skill_per">70%</div>
-				</li>
-				<li>
-					<div class="skill_name">
-						CSS
-					</div>
-					<div class="skill_prog">
-						<span style="width: 90%;"></span>
-					</div>
-					<div class="skill_per">90%</div>
-				</li>					
-			</ul>
-		</div>
-		<!--Experience/Education-->
-		<div class="subheading">Experience</div>
-		<div class="explist">
-			<ul>
-				<li>
-					<div class="date">2022-now</div> 
-					<div class="jobinfo">
-						<div class="jobtitle">Beginner Programmer</div> 
-					<div class ="jobdesc">Learn and using everything to code the program.</div>
-					</div>
-				</li>
-				<li>
-					<div class="date">04/2021-12/2021</div> 
-					<div class="jobinfo">
-						<div class="jobtitle">NDT engineer</div> 
-					<div class ="jobdesc">I am a engineer - using the non-destructive testing menthod to extermine the sample for industry, oil and gas, plane,...</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<!--Social-->
-		<div class="subheading">Social</div>
-		<div class="social">
-			<a href="https://www.facebook.com/minhtinh.ng/" target="_blank">
-				<div class = "icon-social">
-					<span style="padding-left:10px;">
-						<div class="fab fa-facebook-square" id="facebook"><span style="padding-left:6px;">Facebook </span></div>
-				</div>
-			</a>
-			 <a href="twitterlink" target="_blank">
-				 <div class = "icon-social">
-					 <span style="padding-left:10px;"></span>
-					 <div class="fab fa-twitter-square" id="twitter"><span style="padding-left:6px;">Twitter </span></div>
-				 </div>
-			 </a>
-			 <a href="https://www.linkedin.com/in/nguyen-minh-thuan-613983155/">
-				 <div class="icon-social">
-					 <span style="padding-left:10px;"></span>
-					 <div class="fab fa-linkedin" id="linked"><span style="padding-left:6px;">LinkedIn </span></div>
-				</div>
-			 </a>
-			<a href="https://github.com/ngminhthuan" target="_blank">
-				<div class = "icon-social">
-					<span style="padding-left:10px;"></span>
-					<div class="fab fa-github" id="github"> <span style="padding-left:0px;">Github</span></div>
-				</div>
-			 </a>
-		</div>
+			function openmenu(){
+				sidemeu.style.right = "0";
+			}
+			function closemenu(){
+				sidemeu.style.right = "-200px";
+			}
+			
+		</script>
+
+		<script>
+		  const scriptURL = 'https://script.google.com/macros/s/AKfycbwY6Pk4mR3hZmKKop77yETG6xmn-RTrDRASNQtjYBGGZP_XwwED_IHYnQW7_nQiYO9IyA/exec'
+		  const form = document.forms['submit-to-google-sheet']
+
+		  form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			  .then(response => console.log('Success!', response))
+			  .catch(error => console.error('Error!', error.message))
+		  })
+		</script>
+		
 	</body>
 </html>
