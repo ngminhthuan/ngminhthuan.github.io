@@ -7,10 +7,7 @@
 html{
 	scroll-behavior: smooth;
 }
-body{
-	background: #080808;
-	color:#fff;
-}
+
 #header{
 	width:100%;
 	height:100vh;
@@ -18,6 +15,10 @@ body{
 	background-size: cover;
 	background-position: center;
 	color: black;
+}
+body{
+	background: #080808;
+	color:#fff;
 }
 .container{
 	padding: 10px 10%;
