@@ -7,6 +7,7 @@
 		<title>Thuan Portfolio Wesite</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="https://kit.fontawesome.com/9cca766d48.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/wavesurfer.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -128,6 +129,16 @@
 				<a href="#" class="btn">See more</a>
 			</div>
 		</div>
+		<div class="hero">
+			<div class="music">
+				<p class="artist">Artist: Zedd</p>
+				<h1 class="song-name">Ignite (ft. Zedd) | Worlds 2016 - League of Legends</h1>
+				<div class="track">
+					<img src="https://raw.githubusercontent.com/ngminhthuan/ngminhthuan.github.io/main/play.png" id="playBtn">
+					<div id="waveform"></div>
+				</div>
+			</div>
+		</div>
 <!--------Contact---------->			 
 		<div id="contact">
 			<div class="container">
@@ -154,10 +165,45 @@
 					</div>
 				</div>
 			</div>
+			
+			
+			
+			
 			<div class ="copyright">
 				<p>Copyright <i class="fa-solid fa-copyright"></i> Thuan Nguyen</p>
 			</div>
-		</div>	 			 
+		</div>
+<!-----WaveSurfer Song---->
+		<script>
+			var playBtn = document.getElementById("playBtn");
+		
+			var wavesurfer = WaveSurfer.create({
+				container: '#waveform',
+				waveColor: '#ddd',
+				progressColor: '#ff006c',
+				barWidth: 4,
+				responsive: true,
+				height: 90,
+				barRadius: 4,
+				});
+			
+			wavesurfer.load('Ignite.mp3');
+			
+			playBtn.onclick = function(){
+				wavesurfer.playPause();
+				if(playBtn.src.includes("play.png")){
+					playBtn.src = "https://raw.githubusercontent.com/ngminhthuan/ngminhthuan.github.io/main/pause.png";
+				}else{
+					playBtn.src= "https://raw.githubusercontent.com/ngminhthuan/ngminhthuan.github.io/main/play.png";
+				}
+			}
+			
+			wavesurfer.on('finish', function(){
+				playBtn.src = "https://raw.githubusercontent.com/ngminhthuan/ngminhthuan.github.io/main/play.png";
+				wavesurfer.stop();
+			})
+		</script>
+<!-----Switch tab------->		
 		<script>
 			var tablinks = document.getElementsByClassName("tab-links");
 			var tabcontents = document.getElementsByClassName("tab-contents");
@@ -183,7 +229,8 @@
 				sidemeu.style.right = "-200px";
 			}	
 		</script>
-
+		
+<!------Get Data form HMTL to Google sheet---->
 		<script>
 		  const scriptURL = 'https://script.google.com/macros/s/AKfycbw_ksQgRCyDdbInNUzoS7r-cqj32i3fhWuyzdlVTA/exec'
 		  const form = document.forms['submit-to-google-sheet']
