@@ -433,7 +433,7 @@ nav .fa-solid{
 }
 /*---------Preloader-----*/
 #preloader{
-	background: #fff url(images/copper-loader.gif) no-repeat center center;
+	background: #fff url(copper-loader.gif) no-repeat center center;
 	background-size: 20%;
 	height: 100vh;
 	width: 100%;
